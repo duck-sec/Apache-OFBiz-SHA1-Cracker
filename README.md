@@ -46,7 +46,6 @@ Before running the exploit script, ensure that you have:
 
 ```
 usage: OFBiz-crack.py [-h] --hash-string HASH_STRING [--wordlist WORDLIST]
-OFBiz-crack.py: error: the following arguments are required: --hash-string
 ```
 
 ## Example
