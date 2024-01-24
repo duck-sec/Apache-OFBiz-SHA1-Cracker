@@ -63,4 +63,4 @@ hash: $SHA1$d$F_kthjQD8fhzOOl9K9ueEBamX7g=
 
 ## Disclaimer
 
-This code is provided for educational purposes as well as for use in legitimate, AUTHORISED, security testing. Do not use this shell to attempt to access any system which you do not have explicit permission to test or practice on.
+This code is provided for educational and ethical security testing purposes only. It should be used responsibly and only in environments where explicit authorization has been granted. Unauthorized or malicious use is strictly prohibited. By using this tool, you agree to adhere to all applicable laws, regulations, and ethical standards applicable in your jurisdiction. The creators and contributors disclaim any liability for any damages or consequences arising from the misuse or unauthorized use of this tool.
