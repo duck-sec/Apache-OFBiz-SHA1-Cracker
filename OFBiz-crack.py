@@ -8,11 +8,11 @@ def cryptBytes(hash_type, salt, value):
         hash_type = "SHA"
     if not salt:
         salt = base64.urlsafe_b64encode(os.urandom(16)).decode('utf-8')
-    hash_obj = hashlib.new(hash_type)
+    hash_obj = hashlib.new("SHA1" if hash_type == "SHA" else hash_type)
     hash_obj.update(salt.encode('utf-8'))
     hash_obj.update(value)
     hashed_bytes = hash_obj.digest()
-    result = f"${hash_type}${salt}${base64.urlsafe_b64encode(hashed_bytes).decode('utf-8').replace('+', '.')}"
+    result = f"${hash_type}${salt}${base64.urlsafe_b64encode(hashed_bytes).decode('utf-8').replace('+', '.').rstrip('=')}"
     return result
 
 def getCryptedBytes(hash_type, salt, value):
